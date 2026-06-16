@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{league_name}} {{season}} Season Recap</title>
+</head>
+<body style="margin:0;padding:0;background-color:#070a0f;">
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">{{preheader}}</div>
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color:#070a0f;margin:0;padding:0;">
+    <tr>
+      <td align="center" style="padding:24px 10px;">
+        <table role="presentation" width="680" cellspacing="0" cellpadding="0" style="width:680px;max-width:100%;background-color:#0d121a;border:1px solid #2c3542;">
+          <tr>
+            <td style="padding:0;background-color:#111820;">
+              <img src="{{banner_src}}" width="680" alt="Season recap banner placeholder" style="display:block;width:100%;max-width:680px;height:auto;border:0;">
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:34px 28px 24px 28px;background-color:#0d121a;">
+              <div style="font-family:Arial,sans-serif;font-size:12px;line-height:18px;color:#f4d27a;text-transform:uppercase;letter-spacing:2px;font-weight:bold;">NFL Films Voice Activated</div>
+              <h1 style="margin:10px 0 12px 0;font-family:Georgia,serif;font-size:42px;line-height:48px;color:#f8f2df;font-weight:bold;">{{league_name}}: The {{season}} Chronicle</h1>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:17px;line-height:26px;color:#dbe5f0;">There are seasons that pass quietly. This was not one of them. This was a year of fourth-quarter miracles, bench-point ghosts, group chat evidence, and one team walking out of the smoke with the belt.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 24px 28px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #4a3d1e;background-color:#151613;">
+                <tr>
+                  <td style="padding:22px;">
+                    <div style="font-family:Arial,sans-serif;font-size:12px;color:#f4d27a;text-transform:uppercase;letter-spacing:2px;font-weight:bold;">Champion</div>
+                    <div style="font-family:Georgia,serif;font-size:34px;line-height:40px;color:#f8f2df;font-weight:bold;padding-top:5px;">{{champion_name}}</div>
+                    <div style="font-family:Arial,sans-serif;font-size:15px;line-height:23px;color:#dbe5f0;padding-top:8px;">Record: {{champion_record}}. Points: {{champion_points}}. Runner-up: {{runner_up_name}}. Somewhere, a confetti cannon is still coughing smoke.</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 24px 28px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="50%" valign="top" style="padding:0 8px 12px 0;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #364252;background-color:#121821;">
+                      <tr><td style="padding:16px;"><div style="font-family:Arial,sans-serif;font-size:12px;color:#9fb0c5;text-transform:uppercase;letter-spacing:1px;">Regular Season Beast</div><div style="font-family:Georgia,serif;font-size:24px;line-height:30px;color:#f4d27a;font-weight:bold;padding-top:5px;">{{regular_season_beast}}</div><div style="font-family:Arial,sans-serif;font-size:14px;line-height:22px;color:#e7edf6;padding-top:7px;">{{regular_season_beast_detail}}</div></td></tr>
+                    </table>
+                  </td>
+                  <td width="50%" valign="top" style="padding:0 0 12px 8px;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #364252;background-color:#121821;">
+                      <tr><td style="padding:16px;"><div style="font-family:Arial,sans-serif;font-size:12px;color:#9fb0c5;text-transform:uppercase;letter-spacing:1px;">Fraud Watch</div><div style="font-family:Georgia,serif;font-size:24px;line-height:30px;color:#f4d27a;font-weight:bold;padding-top:5px;">{{fraud_team}}</div><div style="font-family:Arial,sans-serif;font-size:14px;line-height:22px;color:#e7edf6;padding-top:7px;">{{fraud_detail}}</div></td></tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%" valign="top" style="padding:0 8px 0 0;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #364252;background-color:#121821;">
+                      <tr><td style="padding:16px;"><div style="font-family:Arial,sans-serif;font-size:12px;color:#9fb0c5;text-transform:uppercase;letter-spacing:1px;">Points King</div><div style="font-family:Georgia,serif;font-size:24px;line-height:30px;color:#f4d27a;font-weight:bold;padding-top:5px;">{{points_king}}</div><div style="font-family:Arial,sans-serif;font-size:14px;line-height:22px;color:#e7edf6;padding-top:7px;">{{points_king_points}} points. The scoreboard had to file for overtime.</div></td></tr>
+                    </table>
+                  </td>
+                  <td width="50%" valign="top" style="padding:0 0 0 8px;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #364252;background-color:#121821;">
+                      <tr><td style="padding:16px;"><div style="font-family:Arial,sans-serif;font-size:12px;color:#9fb0c5;text-transform:uppercase;letter-spacing:1px;">Cruel Math Award</div><div style="font-family:Georgia,serif;font-size:24px;line-height:30px;color:#f4d27a;font-weight:bold;padding-top:5px;">{{unluckiest_team}}</div><div style="font-family:Arial,sans-serif;font-size:14px;line-height:22px;color:#e7edf6;padding-top:7px;">{{unluckiest_detail}}</div></td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px 28px;">
+              <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:30px;line-height:36px;color:#f8f2df;">Signature Moments</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">{{signature_moments}}</table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px 28px;">
+              <img src="{{bracket_src}}" width="624" alt="Playoff bracket graphic placeholder" style="display:block;width:100%;max-width:624px;height:auto;border:0;margin-bottom:18px;">
+              <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:30px;line-height:36px;color:#f8f2df;">The Playoff Road</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">{{playoff_bracket}}</table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px 28px;">
+              <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:30px;line-height:36px;color:#f8f2df;">Final Standings</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:1px solid #364252;background-color:#121821;">
+                <tr><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Rank</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Team</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Record</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">PF</th></tr>
+                {{final_standings_rows}}
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px 28px;">
+              <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:30px;line-height:36px;color:#f8f2df;">Regular Season Table</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:1px solid #364252;background-color:#121821;">
+                <tr><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Seed</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Team</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Record</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">PF</th></tr>
+                {{regular_standings_rows}}
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px 28px;">
+              <img src="{{meme_src}}" width="624" alt="Meme of the season placeholder" style="display:block;width:100%;max-width:624px;height:auto;border:0;margin-bottom:18px;">
+              <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:30px;line-height:36px;color:#f8f2df;">The Tape Does Not Lie</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #364252;background-color:#121821;">
+                <tr><td style="padding:16px;font-family:Arial,sans-serif;font-size:15px;line-height:24px;color:#e7edf6;"><strong style="color:#f4d27a;">Biggest blowout:</strong> {{biggest_blowout}}<br><strong style="color:#f4d27a;">Closest shave:</strong> {{closest_game}}<br><strong style="color:#f4d27a;">Highest single-team score:</strong> {{highest_score}}</td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px 28px;">
+              <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:30px;line-height:36px;color:#f8f2df;">Draft Night Relics: Round One</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:1px solid #364252;background-color:#121821;">
+                <tr><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Pick</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Player</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Pos</th><th align="left" style="padding:10px 8px;color:#9fb0c5;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;">Team</th></tr>
+                {{draft_rows}}
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px 28px;">
+              <h2 style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:30px;line-height:36px;color:#f8f2df;">Every Week, Every Scar</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-top:1px solid #27313f;">{{weekly_scores}}</table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:28px;background-color:#121821;border-top:1px solid #2c3542;">
+              <h2 style="margin:0 0 10px 0;font-family:Georgia,serif;font-size:30px;line-height:36px;color:#f8f2df;">And Now, 2026</h2>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:16px;line-height:25px;color:#dbe5f0;">The trophies have fingerprints on them. The receipts have been laminated. The league reopens with old grudges, new delusions, and twelve teams convinced the next montage belongs to them.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
