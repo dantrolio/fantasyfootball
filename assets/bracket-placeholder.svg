@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1248" height="420" viewBox="0 0 1248 420" role="img" aria-label="Playoff bracket placeholder">
+  <rect width="1248" height="420" fill="#111821"/>
+  <g fill="none" stroke="#d8b35f" stroke-width="5">
+    <rect x="70" y="70" width="260" height="82"/>
+    <rect x="70" y="250" width="260" height="82"/>
+    <rect x="494" y="160" width="260" height="82"/>
+    <rect x="918" y="160" width="260" height="82"/>
+    <path d="M330 111 H430 V201 H494"/>
+    <path d="M330 291 H430 V201 H494"/>
+    <path d="M754 201 H918"/>
+  </g>
+  <text x="624" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#f8f2df">PLAYOFF BRACKET GRAPHIC PLACEHOLDER</text>
+  <text x="624" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#9fb0c5">replace with exported bracket image</text>
+</svg>
