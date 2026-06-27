@@ -7,24 +7,29 @@
   <meta name="description" content="The 2026 Hubbard Fantasy Football League kickoff, featuring old friends, old receipts, and brand-new confidence.">
   <style>
     :root {
-      --navy: #061b3d;
-      --deep: #07122a;
-      --red: #d71920;
-      --teal: #00a3ad;
-      --gold: #ffd447;
-      --cream: #f5f0dc;
-      --ink: #202a35;
-      --white: #ffffff;
+      --royal: #0a4dcc;
+      --royal-bright: #2e7bff;
+      --royal-dark: #062257;
+      --silver: #c8d0db;
+      --silver-dark: #7c8796;
+      --ice: #f7faff;
+      --panel: #0c1422;
+      --panel-soft: #121d2d;
+      --ink: #111820;
+      --black: #05070c;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background:
-        repeating-linear-gradient(0deg, rgba(255,255,255,.03) 0, rgba(255,255,255,.03) 1px, transparent 1px, transparent 4px),
-        radial-gradient(circle at center, rgba(255,255,255,.09), rgba(7,18,42,.92) 52%, #020714 100%);
-      color: var(--cream);
+      background-color: var(--black);
+      background-image: url("assets/smoke-background.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: var(--silver);
       font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -33,9 +38,8 @@
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
-      mix-blend-mode: soft-light;
-      opacity: .45;
+      background: rgba(2, 5, 10, .42);
+      z-index: -1;
     }
 
     .wrap {
@@ -45,22 +49,22 @@
     }
 
     .scorebug {
-      background: var(--cream);
-      color: var(--navy);
-      border: 5px solid var(--red);
-      box-shadow: 0 0 0 4px rgba(0,163,173,.55), 0 18px 45px rgba(0,0,0,.35);
+      background: rgba(7, 16, 30, .95);
+      color: var(--ice);
+      border: 3px solid var(--silver);
+      box-shadow: 0 0 0 4px rgba(10, 77, 204, .7), 0 18px 45px rgba(0,0,0,.55);
       padding: 16px;
       text-align: center;
     }
 
     .ticker {
-      background: var(--red);
-      color: var(--white);
+      background: var(--royal);
+      color: var(--ice);
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: .08em;
       padding: 11px 12px;
-      font-size: clamp(14px, 3vw, 22px);
+      font-size: 20px;
     }
 
     h1, h2, h3 {
@@ -71,16 +75,16 @@
     }
 
     h1 {
-      color: var(--red);
-      font-size: clamp(44px, 12vw, 92px);
+      color: var(--ice);
+      font-size: 76px;
       line-height: .9;
       margin-top: 22px;
-      text-shadow: 3px 0 #00a3ad, -3px 0 #001229;
+      text-shadow: 4px 4px 0 var(--royal), -1px -1px 0 var(--silver-dark);
     }
 
     .subtitle {
-      color: var(--teal);
-      font-size: clamp(16px, 4vw, 26px);
+      color: var(--royal-bright);
+      font-size: 24px;
       font-weight: 900;
       margin: 10px auto 0;
       max-width: 760px;
@@ -88,8 +92,8 @@
     }
 
     .hero-copy {
-      color: var(--ink);
-      font-size: clamp(17px, 4vw, 22px);
+      color: var(--silver);
+      font-size: 20px;
       line-height: 1.35;
       max-width: 810px;
       margin: 18px auto 0;
@@ -98,13 +102,13 @@
 
     .memory {
       margin: 18px 0 0;
-      background: var(--cream);
-      border: 5px solid var(--teal);
+      background: var(--panel);
+      border: 3px solid var(--silver);
       padding: 8px;
       box-shadow: 0 16px 34px rgba(0,0,0,.32);
     }
 
-    .memory.red { border-color: var(--red); }
+    .memory.red { border-color: var(--royal-bright); }
 
     .memory img {
       display: block;
@@ -122,7 +126,7 @@
     }
 
     .memory figcaption {
-      color: var(--navy);
+      color: var(--silver);
       font-size: 14px;
       font-weight: 900;
       line-height: 1.35;
@@ -132,15 +136,15 @@
     }
 
     .kickoff-copy {
-      background: var(--cream);
-      border-left: 10px solid var(--red);
-      color: var(--ink);
+      background: rgba(12, 20, 34, .96);
+      border-left: 10px solid var(--royal-bright);
+      color: var(--silver);
       margin-top: 18px;
       padding: 18px;
       box-shadow: 0 14px 28px rgba(0,0,0,.28);
     }
 
-    .kickoff-copy strong { color: var(--navy); }
+    .kickoff-copy strong { color: var(--ice); }
 
     .look-back {
       margin-top: 34px;
@@ -150,7 +154,7 @@
     .look-back .section-title { margin-bottom: 8px; }
 
     .look-back p {
-      color: #d7edf2;
+      color: var(--silver);
       margin: 0 auto 14px;
       max-width: 760px;
       font-weight: 700;
@@ -164,30 +168,30 @@
     }
 
     .card {
-      background: var(--cream);
-      border: 4px solid var(--teal);
-      color: var(--ink);
+      background: rgba(12, 20, 34, .96);
+      border: 3px solid var(--silver);
+      color: var(--silver);
       padding: 18px;
       box-shadow: 0 14px 28px rgba(0,0,0,.28);
     }
 
-    .card.red { border-color: var(--red); }
+    .card.red { border-color: var(--royal-bright); }
     .card h2 {
-      color: var(--red);
-      font-size: clamp(26px, 6vw, 42px);
+      color: var(--ice);
+      font-size: 40px;
       line-height: 1.02;
       margin-bottom: 10px;
     }
 
     .card h3 {
-      color: var(--navy);
-      font-size: clamp(21px, 5vw, 32px);
+      color: var(--ice);
+      font-size: 30px;
       line-height: 1.05;
       margin-bottom: 8px;
     }
 
     .eyebrow {
-      color: var(--red);
+      color: var(--royal-bright);
       font-size: 13px;
       font-weight: 900;
       text-transform: uppercase;
@@ -197,21 +201,21 @@
 
     p {
       margin: 0;
-      font-size: clamp(16px, 3.8vw, 20px);
+      font-size: 20px;
       line-height: 1.42;
     }
 
     .section-title {
-      color: var(--gold);
-      font-size: clamp(32px, 8vw, 58px);
+      color: var(--ice);
+      font-size: 50px;
       margin: 34px 0 14px;
-      text-shadow: 3px 0 var(--red);
+      text-shadow: 4px 4px 0 var(--royal);
     }
 
     .breaking {
-      background: var(--cream);
-      color: var(--navy);
-      border: 5px solid var(--red);
+      background: rgba(12, 20, 34, .97);
+      color: var(--silver);
+      border: 3px solid var(--royal-bright);
       margin-top: 18px;
       padding: 16px;
       text-align: center;
@@ -219,24 +223,24 @@
     }
 
     .breaking h2 {
-      color: var(--navy);
-      font-size: clamp(34px, 8vw, 62px);
+      color: var(--ice);
+      font-size: 56px;
       line-height: .98;
       margin: 20px 0 8px;
-      text-shadow: 2px 0 var(--teal), -2px 0 rgba(0,0,0,.4);
+      text-shadow: 4px 4px 0 var(--royal-dark);
     }
 
     .breaking .tagline {
-      color: var(--teal);
+      color: var(--royal-bright);
       font-family: "Arial Black", Impact, Arial, sans-serif;
-      font-size: clamp(24px, 6vw, 44px);
+      font-size: 38px;
       text-transform: uppercase;
     }
 
     .bracket {
-      background: var(--cream);
-      color: var(--ink);
-      border: 5px solid var(--red);
+      background: rgba(12, 20, 34, .97);
+      color: var(--silver);
+      border: 3px solid var(--silver);
       padding: 18px;
       box-shadow: 0 16px 34px rgba(0,0,0,.32);
     }
@@ -249,54 +253,56 @@
     }
 
     .round {
-      border: 3px solid var(--teal);
-      background: var(--white);
+      border: 2px solid var(--silver-dark);
+      background: var(--panel-soft);
       padding: 14px;
     }
 
     .round h3 {
-      color: var(--red);
+      color: var(--royal-bright);
       font-size: 18px;
       margin-bottom: 10px;
     }
 
     .team-pill {
-      border: 3px solid var(--teal);
+      border: 2px solid var(--silver-dark);
       padding: 10px;
       margin: 8px 0;
       font-weight: 900;
-      color: var(--navy);
-      background: var(--white);
+      color: var(--silver);
+      background: #182538;
     }
 
     .team-pill.win {
-      border-color: var(--red);
-      background: var(--gold);
+      border-color: var(--silver);
+      background: var(--royal);
+      color: var(--ice);
     }
 
     .scroll-update {
-      background: var(--cream);
-      color: var(--navy);
-      border: 5px solid var(--red);
+      background: rgba(12, 20, 34, .97);
+      color: var(--silver);
+      border: 3px solid var(--silver);
       padding: 16px;
       text-align: center;
       margin-top: 28px;
     }
 
     .scroll-update h2 {
-      color: var(--navy);
-      font-size: clamp(28px, 7vw, 54px);
+      color: var(--ice);
+      font-size: 48px;
       line-height: 1;
       margin: 18px 0;
-      text-shadow: 2px 0 var(--teal), -2px 0 rgba(0,0,0,.35);
+      text-shadow: 4px 4px 0 var(--royal-dark);
     }
 
     .scroll-update .redline {
-      color: var(--red);
+      color: var(--ice);
       font-family: "Arial Black", Impact, Arial, sans-serif;
-      font-size: clamp(28px, 8vw, 58px);
+      font-size: 50px;
       line-height: 1;
       text-transform: uppercase;
+      text-shadow: 4px 4px 0 var(--royal);
     }
 
     .roast-list {
@@ -312,16 +318,16 @@
     }
 
     .receipt {
-      background: var(--cream);
-      color: var(--ink);
-      border: 4px solid var(--teal);
+      background: rgba(12, 20, 34, .97);
+      color: var(--silver);
+      border: 3px solid var(--silver-dark);
       padding: 16px;
       box-shadow: 0 14px 28px rgba(0,0,0,.28);
     }
 
     .receipt b {
       display: block;
-      color: var(--red);
+      color: var(--royal-bright);
       font-family: "Arial Black", Impact, Arial, sans-serif;
       font-size: 13px;
       text-transform: uppercase;
@@ -330,10 +336,10 @@
     }
 
     .receipt strong {
-      color: var(--navy);
+      color: var(--ice);
       display: block;
       font-family: "Arial Black", Impact, Arial, sans-serif;
-      font-size: clamp(22px, 5vw, 34px);
+      font-size: 30px;
       line-height: 1.02;
       margin-bottom: 8px;
       text-transform: uppercase;
@@ -341,26 +347,37 @@
 
 
     .roast {
-      background: var(--cream);
-      color: var(--ink);
-      border-left: 10px solid var(--red);
+      background: rgba(12, 20, 34, .97);
+      color: var(--silver);
+      border-left: 10px solid var(--royal-bright);
       padding: 16px;
     }
 
     .roast strong {
-      color: var(--navy);
+      color: var(--ice);
       font-family: "Arial Black", Impact, Arial, sans-serif;
       text-transform: uppercase;
     }
 
     footer {
-      color: #d7edf2;
+      color: var(--silver);
       text-align: center;
       margin-top: 36px;
       font-weight: 700;
     }
 
     @media (max-width: 720px) {
+      .ticker { font-size: 15px; }
+      h1 { font-size: 44px; }
+      .subtitle { font-size: 18px; }
+      .hero-copy, p { font-size: 17px; }
+      .section-title { font-size: 35px; }
+      .breaking h2 { font-size: 36px; }
+      .breaking .tagline { font-size: 27px; }
+      .scroll-update h2 { font-size: 34px; }
+      .scroll-update .redline { font-size: 36px; }
+      .receipt strong { font-size: 24px; }
+
       .grid {
         grid-template-columns: 1fr;
       }
@@ -391,7 +408,7 @@
       <div class="ticker">Hubbard Fantasy Football League</div>
       <h1>2026 Kickoff</h1>
       <div class="subtitle">Season 22</div>
-      <p class="hero-copy">The yearly reminder that jobs change, kids grow up, knees get worse, and twelve men can still become irrationally angry about a backup running back by Thursday night.</p>
+      <p class="hero-copy">The yearly reminder that jobs change, kids grow up, knees get worse, and 12 teams can still become irrationally angry about a backup running back by Thursday night.</p>
     </section>
 
     <figure class="memory">
@@ -400,7 +417,7 @@
     </figure>
 
     <section class="kickoff-copy">
-      <p><strong>Season 22 and we are still doing this.</strong> We have jobs, little kids, packed calendars, and group chats we ignore for six days at a time. But every fall, this league gives everybody a reason to find their way back to the same draft board, the same football Sundays, and the same arguments nobody has ever actually won.</p>
+      <p><strong>Season 22 and we are still doing this.</strong> We have jobs, little kids, packed calendars, and knees that now make their own sound effects. Somehow every fall, this league still gets everybody back to the same draft board, the same football Sundays, and the same arguments nobody has ever actually won.</p>
       <p style="margin-top:12px;">So welcome to 2026. Clear a night. Find a babysitter. Begin pretending you have not already done 40 mock drafts. The league is back, the confidence is medically concerning, and once again none of you are nearly as smart as your preseason rankings suggest.</p>
     </section>
 
@@ -499,7 +516,7 @@
     <h2 class="section-title">2026 Warning Label</h2>
     <section class="card red">
       <p>Training camp is not even loud yet and half this league already thinks it beat ADP. One preseason slant will turn a fourth-round receiver into "my sleeper," as if the rest of us do not also have Google.</p>
-      <p style="margin-top:12px;">By Week 3, four managers will blame injuries, two will announce a rebuild nobody asked for, and one will quietly stop talking after starting 0-3. Twelve grown men enter. Maybe three know their waiver settings. Welcome back, clowns.</p>
+      <p style="margin-top:12px;">By Week 3, four managers will blame injuries, two will announce a rebuild nobody asked for, and one will quietly stop talking after starting 0-3. 12 teams enter. Maybe three know their waiver settings. Welcome back, clowns.</p>
     </section>
 
     <footer>
