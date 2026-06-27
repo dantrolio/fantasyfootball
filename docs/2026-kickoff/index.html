@@ -8,38 +8,40 @@
   <style>
     :root {
       --royal: #0a4dcc;
-      --royal-bright: #2e7bff;
-      --royal-dark: #062257;
-      --silver: #c8d0db;
-      --silver-dark: #7c8796;
-      --ice: #f7faff;
-      --panel: #0c1422;
-      --panel-soft: #121d2d;
-      --ink: #111820;
-      --black: #05070c;
+      --royal-bright: #1768e5;
+      --royal-dark: #102a56;
+      --silver: #d7dde6;
+      --silver-dark: #8793a3;
+      --ice: #ffffff;
+      --panel: #ffffff;
+      --panel-soft: #edf1f6;
+      --ink: #17233a;
+      --page: #e8edf4;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background: var(--black);
-      color: var(--silver);
+      background: var(--page);
+      color: var(--ink);
       font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
 
     .wrap {
       width: min(100%, 980px);
       margin: 0 auto;
-      padding: 18px 14px 46px;
+      padding: 16px 14px 42px;
     }
 
     .scorebug {
-      background: rgba(7, 16, 30, .95);
-      color: var(--ice);
-      border: 3px solid var(--silver);
-      box-shadow: 0 0 0 4px rgba(10, 77, 204, .7), 0 18px 45px rgba(0,0,0,.55);
-      padding: 16px;
+      background: var(--ice);
+      color: var(--ink);
+      border: 2px solid var(--silver-dark);
+      border-top: 8px solid var(--royal);
+      box-shadow: 0 10px 28px rgba(16, 42, 86, .14);
+      padding: 14px;
       text-align: center;
     }
 
@@ -61,15 +63,15 @@
     }
 
     h1 {
-      color: var(--ice);
-      font-size: 76px;
-      line-height: .9;
-      margin-top: 22px;
-      text-shadow: 4px 4px 0 var(--royal), -1px -1px 0 var(--silver-dark);
+      color: var(--royal-dark);
+      font-size: 64px;
+      line-height: .95;
+      margin-top: 20px;
+      text-shadow: 3px 3px 0 var(--silver);
     }
 
     .subtitle {
-      color: var(--royal-bright);
+      color: var(--royal);
       font-size: 24px;
       font-weight: 900;
       margin: 10px auto 0;
@@ -81,8 +83,8 @@
       display: inline-block;
       margin-top: 14px;
       padding: 8px 14px;
-      background: var(--royal-dark);
-      border: 2px solid var(--silver);
+      background: var(--royal);
+      border: 2px solid var(--royal-dark);
       color: var(--ice);
       font-size: 20px;
       font-weight: 900;
@@ -91,9 +93,9 @@
     }
 
     .hero-copy {
-      color: var(--silver);
-      font-size: 20px;
-      line-height: 1.35;
+      color: var(--ink);
+      font-size: 19px;
+      line-height: 1.45;
       max-width: 810px;
       margin: 18px auto 0;
       font-weight: 700;
@@ -102,9 +104,9 @@
     .memory {
       margin: 18px 0 0;
       background: var(--panel);
-      border: 3px solid var(--silver);
+      border: 2px solid var(--silver-dark);
       padding: 8px;
-      box-shadow: 0 16px 34px rgba(0,0,0,.32);
+      box-shadow: 0 10px 24px rgba(16, 42, 86, .12);
     }
 
     .memory.red { border-color: var(--royal-bright); }
@@ -134,14 +136,14 @@
       width: 100%;
       overflow-x: auto;
       overflow-y: hidden;
-      background: var(--black);
+      background: var(--panel-soft);
       overscroll-behavior-inline: contain;
       scrollbar-color: var(--royal-bright) var(--panel-soft);
       scrollbar-width: thin;
     }
 
     .memory figcaption {
-      color: var(--silver);
+      color: var(--royal-dark);
       font-size: 14px;
       font-weight: 900;
       line-height: 1.35;
@@ -151,15 +153,16 @@
     }
 
     .kickoff-copy {
-      background: rgba(12, 20, 34, .96);
-      border-left: 10px solid var(--royal-bright);
-      color: var(--silver);
+      background: var(--ice);
+      border: 1px solid var(--silver);
+      border-left: 8px solid var(--royal);
+      color: var(--ink);
       margin-top: 18px;
       padding: 18px;
-      box-shadow: 0 14px 28px rgba(0,0,0,.28);
+      box-shadow: 0 8px 20px rgba(16, 42, 86, .1);
     }
 
-    .kickoff-copy strong { color: var(--ice); }
+    .kickoff-copy strong { color: var(--royal-dark); }
 
     .look-back {
       margin-top: 34px;
@@ -169,7 +172,7 @@
     .look-back .section-title { margin-bottom: 8px; }
 
     .look-back p {
-      color: var(--silver);
+      color: var(--ink);
       margin: 0 auto 14px;
       max-width: 760px;
       font-weight: 700;
@@ -183,23 +186,23 @@
     }
 
     .card {
-      background: rgba(12, 20, 34, .96);
-      border: 3px solid var(--silver);
-      color: var(--silver);
+      background: var(--ice);
+      border: 2px solid var(--silver-dark);
+      color: var(--ink);
       padding: 18px;
-      box-shadow: 0 14px 28px rgba(0,0,0,.28);
+      box-shadow: 0 8px 20px rgba(16, 42, 86, .1);
     }
 
     .card.red { border-color: var(--royal-bright); }
     .card h2 {
-      color: var(--ice);
+      color: var(--royal-dark);
       font-size: 40px;
       line-height: 1.02;
       margin-bottom: 10px;
     }
 
     .card h3 {
-      color: var(--ice);
+      color: var(--royal-dark);
       font-size: 30px;
       line-height: 1.05;
       margin-bottom: 8px;
@@ -216,33 +219,33 @@
 
     p {
       margin: 0;
-      font-size: 20px;
-      line-height: 1.42;
+      font-size: 18px;
+      line-height: 1.5;
     }
 
     .section-title {
-      color: var(--ice);
-      font-size: 50px;
+      color: var(--royal-dark);
+      font-size: 46px;
       margin: 34px 0 14px;
-      text-shadow: 4px 4px 0 var(--royal);
+      text-shadow: 3px 3px 0 var(--silver);
     }
 
     .breaking {
-      background: rgba(12, 20, 34, .97);
-      color: var(--silver);
-      border: 3px solid var(--royal-bright);
+      background: var(--ice);
+      color: var(--ink);
+      border: 3px solid var(--royal);
       margin-top: 18px;
       padding: 16px;
       text-align: center;
-      box-shadow: 0 16px 34px rgba(0,0,0,.3);
+      box-shadow: 0 10px 24px rgba(16, 42, 86, .12);
     }
 
     .breaking h2 {
-      color: var(--ice);
+      color: var(--royal-dark);
       font-size: 56px;
       line-height: .98;
       margin: 20px 0 8px;
-      text-shadow: 4px 4px 0 var(--royal-dark);
+      text-shadow: 3px 3px 0 var(--silver);
     }
 
     .breaking .tagline {
@@ -253,11 +256,11 @@
     }
 
     .bracket {
-      background: rgba(12, 20, 34, .97);
-      color: var(--silver);
-      border: 3px solid var(--silver);
+      background: var(--ice);
+      color: var(--ink);
+      border: 2px solid var(--silver-dark);
       padding: 18px;
-      box-shadow: 0 16px 34px rgba(0,0,0,.32);
+      box-shadow: 0 10px 24px rgba(16, 42, 86, .12);
     }
 
     .bracket-grid {
@@ -284,8 +287,8 @@
       padding: 10px;
       margin: 8px 0;
       font-weight: 900;
-      color: var(--silver);
-      background: #182538;
+      color: var(--ink);
+      background: var(--ice);
     }
 
     .team-pill.win {
@@ -295,29 +298,29 @@
     }
 
     .scroll-update {
-      background: rgba(12, 20, 34, .97);
-      color: var(--silver);
-      border: 3px solid var(--silver);
+      background: var(--ice);
+      color: var(--ink);
+      border: 2px solid var(--silver-dark);
       padding: 16px;
       text-align: center;
       margin-top: 28px;
     }
 
     .scroll-update h2 {
-      color: var(--ice);
+      color: var(--royal-dark);
       font-size: 48px;
       line-height: 1;
       margin: 18px 0;
-      text-shadow: 4px 4px 0 var(--royal-dark);
+      text-shadow: 3px 3px 0 var(--silver);
     }
 
     .scroll-update .redline {
-      color: var(--ice);
+      color: var(--royal-dark);
       font-family: "Arial Black", Impact, Arial, sans-serif;
       font-size: 50px;
       line-height: 1;
       text-transform: uppercase;
-      text-shadow: 4px 4px 0 var(--royal);
+      text-shadow: 3px 3px 0 var(--silver);
     }
 
     .roast-list {
@@ -333,11 +336,11 @@
     }
 
     .receipt {
-      background: rgba(12, 20, 34, .97);
-      color: var(--silver);
-      border: 3px solid var(--silver-dark);
+      background: var(--ice);
+      color: var(--ink);
+      border: 2px solid var(--silver-dark);
       padding: 16px;
-      box-shadow: 0 14px 28px rgba(0,0,0,.28);
+      box-shadow: 0 8px 20px rgba(16, 42, 86, .1);
     }
 
     .receipt b {
@@ -351,7 +354,7 @@
     }
 
     .receipt strong {
-      color: var(--ice);
+      color: var(--royal-dark);
       display: block;
       font-family: "Arial Black", Impact, Arial, sans-serif;
       font-size: 30px;
@@ -362,41 +365,43 @@
 
 
     .roast {
-      background: rgba(12, 20, 34, .97);
-      color: var(--silver);
-      border-left: 10px solid var(--royal-bright);
+      background: var(--ice);
+      color: var(--ink);
+      border: 1px solid var(--silver);
+      border-left: 8px solid var(--royal);
       padding: 16px;
     }
 
     .roast strong {
-      color: var(--ice);
+      color: var(--royal-dark);
       font-family: "Arial Black", Impact, Arial, sans-serif;
       text-transform: uppercase;
     }
 
     footer {
-      color: var(--silver);
+      color: var(--royal-dark);
       text-align: center;
       margin-top: 36px;
       font-weight: 700;
     }
 
     @media (max-width: 720px) {
-      .draft-board-scroll a {
-        width: 1600px;
+      .memory img.draft-board {
+        width: 1200px;
+        max-width: none;
       }
 
-      .ticker { font-size: 15px; }
-      h1 { font-size: 44px; }
-      .subtitle { font-size: 18px; }
-      .draft-date { font-size: 17px; }
-      .hero-copy, p { font-size: 17px; }
-      .section-title { font-size: 35px; }
-      .breaking h2 { font-size: 36px; }
-      .breaking .tagline { font-size: 27px; }
-      .scroll-update h2 { font-size: 34px; }
-      .scroll-update .redline { font-size: 36px; }
-      .receipt strong { font-size: 24px; }
+      .ticker { font-size: 14px; padding: 9px 8px; }
+      h1 { font-size: 40px; margin-top: 16px; }
+      .subtitle { font-size: 17px; }
+      .draft-date { font-size: 16px; padding: 7px 10px; }
+      .hero-copy, p { font-size: 16px; line-height: 1.5; }
+      .section-title { font-size: 32px; margin-top: 28px; }
+      .breaking h2 { font-size: 33px; }
+      .breaking .tagline { font-size: 25px; }
+      .scroll-update h2 { font-size: 31px; }
+      .scroll-update .redline { font-size: 32px; }
+      .receipt strong { font-size: 23px; }
 
       .grid {
         grid-template-columns: 1fr;
@@ -407,12 +412,13 @@
       }
 
       .wrap {
-        padding-inline: 10px;
+        padding: 8px 8px 32px;
       }
 
-      .card {
-        padding: 15px;
-      }
+      .scorebug { padding: 10px; }
+      .card, .breaking, .bracket, .scroll-update, .receipt, .roast { padding: 14px; }
+      .kickoff-copy { padding: 15px; }
+      .grid, .receipts { gap: 10px; }
     }
 
     @media (min-width: 760px) {
