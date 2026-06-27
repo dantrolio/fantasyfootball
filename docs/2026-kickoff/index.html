@@ -24,7 +24,7 @@
     body {
       margin: 0;
       background-color: var(--black);
-      background-image: url("assets/smoke-background.jpg");
+      background-image: url("assets/smoke-background-hq.jpg");
       background-position: center top;
       background-repeat: no-repeat;
       background-size: cover;
@@ -118,11 +118,27 @@
       object-position: center;
     }
 
+    .memory img.group-photo {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
     .memory a { display: block; }
 
     .memory img.draft-board {
-      aspect-ratio: 3 / 2;
-      object-fit: contain;
+      aspect-ratio: auto;
+      height: auto;
+      object-fit: initial;
+    }
+
+    .draft-board-scroll {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      background: var(--black);
+      overscroll-behavior-inline: contain;
+      scrollbar-color: var(--royal-bright) var(--panel-soft);
+      scrollbar-width: thin;
     }
 
     .memory figcaption {
@@ -367,6 +383,16 @@
     }
 
     @media (max-width: 720px) {
+      body {
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: auto 100vh;
+      }
+
+      .draft-board-scroll a {
+        width: 1120px;
+      }
+
       .ticker { font-size: 15px; }
       h1 { font-size: 44px; }
       .subtitle { font-size: 18px; }
@@ -412,7 +438,7 @@
     </section>
 
     <figure class="memory">
-      <img src="assets/league-group-outdoor.jpg" alt="The Hubbard fantasy football league together at an early draft gathering">
+      <img class="group-photo" src="assets/league-group-outdoor-cropped.jpg" alt="The Hubbard fantasy football league together at an early draft gathering">
       <figcaption>Before the kids, the mortgages, and the phrase "I have an early morning."</figcaption>
     </figure>
 
@@ -425,9 +451,11 @@
       <h2 class="section-title">A Look Back: 2025</h2>
       <p>Before the new lies begin, the old receipts must be entered into evidence.</p>
       <figure class="memory red">
-        <a href="assets/2025-draft-board.jpg">
-          <img class="draft-board" src="assets/2025-draft-board.jpg" alt="The complete 2025 Hubbard Fantasy Football League draft board">
-        </a>
+        <div class="draft-board-scroll">
+          <a href="assets/2025-draft-board.jpg">
+            <img class="draft-board" src="assets/2025-draft-board.jpg" alt="The complete 2025 Hubbard Fantasy Football League draft board">
+          </a>
+        </div>
         <figcaption>Nineteen rounds of confidence, hindsight, and players several of you already pretend you never wanted.</figcaption>
       </figure>
     </section>
