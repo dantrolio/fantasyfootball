@@ -23,23 +23,9 @@
 
     body {
       margin: 0;
-      background-color: var(--black);
-      background-image: url("assets/smoke-background-hq.jpg");
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      background: var(--black);
       color: var(--silver);
       font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background: rgba(2, 5, 10, .42);
-      z-index: -1;
     }
 
     .wrap {
@@ -396,14 +382,8 @@
     }
 
     @media (max-width: 720px) {
-      body {
-        background-attachment: scroll;
-        background-position: center top;
-        background-size: auto 100vh;
-      }
-
       .draft-board-scroll a {
-        width: 1120px;
+        width: 1600px;
       }
 
       .ticker { font-size: 15px; }
@@ -453,7 +433,7 @@
     </section>
 
     <figure class="memory">
-      <img class="group-photo" src="assets/league-group-outdoor-cropped.jpg" alt="The Hubbard fantasy football league together at an early draft gathering">
+      <img class="group-photo" src="assets/league-group-outdoor-v2.png" alt="The Hubbard fantasy football league together at an early draft gathering">
       <figcaption>Before the kids, the mortgages, and the phrase "I have an early morning."</figcaption>
     </figure>
 
@@ -467,8 +447,8 @@
       <p>Before the new lies begin, the old receipts must be entered into evidence.</p>
       <figure class="memory red">
         <div class="draft-board-scroll">
-          <a href="assets/2025-draft-board.jpg">
-            <img class="draft-board" src="assets/2025-draft-board.jpg" alt="The complete 2025 Hubbard Fantasy Football League draft board">
+          <a href="assets/2025-draft-board-v2.jpg">
+            <img class="draft-board" src="assets/2025-draft-board-v2.jpg" alt="The complete 2025 Hubbard Fantasy Football League draft board">
           </a>
         </div>
         <figcaption>Nineteen rounds of confidence, hindsight, and players several of you already pretend you never wanted.</figcaption>
